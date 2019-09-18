@@ -1,0 +1,60 @@
+/*under the body selector i aim to set a background image which will affect all the webpages in my website*/
+body{
+	background-image: url('http://wallpapercave.com/wp/W2uyrd9.jpg');
+	width: 100%;
+	background-position: center;
+	/*here the position of image is fixed to give a visually pleasing effect*/
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+/*to make all the words that holds links look more nice, I used a selector which changes the appearance of words holding href*/
+a{
+	color: black;
+	text-decoration: none;
+	font-size: 20;
+}
+/*users will most likely hover over the clickable areas in the website. Hence, the :hover allows me to change appearance one the mouse is 
+above the linked word*/
+a:visited{
+	background-color:rgba(0,0,0,.4);
+}
+a:link{
+	font-family:segoe UI;
+	font-style:italic;
+	color:black;
+}
+
+a:hover{
+	background-color: rgba(255, 25, 34, 1.0);
+	color: rgba(255, 255, 255, 1.0);
+	padding:4px;
+}
+a:active{
+	background-color: rgba(0, 0, 0, .3);
+	color: rgba(255, 255, 255, 1.0);
+	padding:4px;
+}
+/*by applying uniform style to all the paragraphs in the website, it makes the website more unified and less disordered*/
+p{
+	text-indent:50px;
+	font-size:20;
+	font-family: segoe UI;
+	/*by applying a background color, it allows the users to see the text against the background*/
+	background-color:	rgba(255, 255, 255, 0.6);
+	padding: 14px 25px;
+}
+p::first-letter{
+	font-family:"Brush Script MT",cursive;
+	font-size: 34px;
+}
+p::first-line{
+	font-family:Tahoma;
+}
+/*to make the subheaders stand out, I styled the different from both the paragraphs and h1 selector*/
+h2{
+	background-color:	rgba(234, 32, 54, 0.6);
+	display: inline-block;
+	padding: 14px 25px;
+}
+

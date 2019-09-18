@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+	<head>
+	<!--<this will be the title that appears on the tab bar>-->
+	<title>Insight of a Soul</title>
+	<!--this part links to the css file also known as internal styling-->
+	<link rel="stylesheet" href="CSS/RI_MyFormatting.css">
+	<link rel="stylesheet" href="CSS/RI_MyIntroductionP2.css">
+	<!--<this style tag allows me to change how the text appears on the webpage. I refer to the div id's given to various tags such as the 'p' tag>-->
+	<!--<when calling the id's, it's important to put the hashtag before the id name>-->
+		<!--a different background is given to this particular page overwriting the general background used in external css. I use a lot of internal styling here
+		because this page was highly customized to make it "personal"-->
+		<style>
+		#column{
+		margin-top:50px;
+		float:right;
+		width:150px;
+		height:2000px;
+		background-color:rgba(209,209,209,.8);
+		border-style:solid;
+		clear:both;
+		}
+		a:hover{
+		padding:px;
+		}
+		body{
+		background-image: url('Images/gtr.jpg');
+		padding-top:70px;
+		background-size: cover;
+		}
+		.container{
+		height:500px;
+		width:600px;
+		float:both;
+		}
+		.par2{
+		width:1075px;
+		background-color: rgba(255, 255, 255, 0.4);
+		}
+		#container2{
+		overflow:auto;
+		margin:10px;
+		height:600px;
+		width:400px;
+		float:right;
+		margin-top:100px;
+		float:left;
+		}
+		#part2{
+		overflow:auto;
+		margin:5px;
+		height:600px;
+		width:350px;
+		float:right;
+		margin-top:150px;
+		}
+		#container3{
+		height:100px;
+		width:1070px;
+		margin-top:750px;
+		clear:left;
+		float:both;
+		}
+		#walking{
+		float:left;
+		margin-top:100px;
+		}
+
+		#microchip{
+		float:left;
+		margin:20px;
+		background-color:black;
+		margin-left:30px;
+		opacity:1;
+		height:250px;
+		overflow:hidden;
+		min-width:500px;
+
+		}
+		#bronxsci{
+		margin:20px;
+		clear:right;
+		float:right;
+		background-color:black;
+		margin-right:30px;
+		height:250px;
+		width:500px;
+		}
+		#tesla{
+		float:right;
+		margin:20px;
+		background-color:black;
+		margin-right:30px;
+		height:250px;
+		width:500px;
+		}
+		#quote{
+		clear:left;
+		float:left;
+		margin:20px;
+		margin-right:20px;
+		margin-left:25px;
+		background-color:black;
+		}
+		#quote2{
+		float:left;
+		margin:20px;
+		margin-left:-7px;;
+		background-color:rgba(0,0,0,1);
+		}
+		#family{
+		filter:brightness(80%);
+		background-color:white;
+		float:right;
+		margin:20px;
+		margin-top:60px;
+		}
+		figcaption{
+		color:black;
+		background-color:rgba(255,255,255,.8);
+		padding: 0.5em;
+		border: thin silver solid;
+		border-bottom: none;
+		width:380px;
+		height:70px;
+		font-family:segoe UI;
+		}
+		.text{
+		clear:both;
+		margin:10px;
+		padding-top:100px;
+		}
+
+		#p1.text{
+		font-family:segoe UI;
+		background-color:	rgba(255, 255, 255, 0.8);
+		}
+		#p2.text{
+		font-family:segoe UI;
+		background-color:	rgba(255, 255, 255, 0.8);
+		}
+		#p3.text{
+		font-family:segoe UI;
+		background-color:	rgba(255, 255, 255, 0.8);
+		clear:left;
+		}
+		h2.text{
+		background-color: rgba(245,123,29,.8);
+		}
+		#s{
+		font-size:55;
+		background-color:rgba(209,209,209,.8);
+		}
+		#il{
+		background-color: rgba(243,132,45,.3);
+		}
+
+		#mbar{
+		background-color: rgba(0,0,0,1);
+		width:100%;
+		height:70px;
+		line-height:70px;
+		position:fixed;
+		top:0;
+		z-index:100;
+		}
+		#mbar ul{
+		float:right;
+		margin-right:20px;
+		}
+		#mbar h1{
+		float:left;
+		color:white;
+		}
+
+		#mbar ul li{
+		list-style-type:none;
+		display:inline-block;
+		padding:12px;
+		}
+		#mbar ul li:nth-child(2) a{
+		background-color:rgba(255,255,255,.8);
+		color:black;
+		padding:10px;
+		}
+		#mbar ul li a{
+		color:white;
+		}
+
+
+		*{
+		padding:0px;
+		margin:0px;
+		}
+		nav{
+		width:100%;
+		text-align:center;
+		}
+		nav a{
+		display:block;
+		padding:15px;
+		border-bottom:1px solid;
+		color:black;
+		}
+		nav a:hover{
+		display:block;
+		padding:15px;
+		border-bottom:1px solid;
+		color:black;
+		}
+		.sidebar{
+		margin-top:40px;
+		width:190px;
+		height:100%;
+		position:absolute;
+		background-color:rgba(255,255,255,1);
+		left:-244px;
+		z-index:100;
+		transition:2s;
+		position:fixed;
+		border-radius:25px;
+		}
+
+		.icon{
+		color:rgba(255,255,255,1);
+		padding:10px;
+		padding-left:50px;
+		left:-35px;
+		background-color:rgba(61,61,61,.8);
+		cursor:pointer;
+		position:fixed;
+		z-index:100;
+		border-radius: 25px;
+		}
+
+		.icon:hover{
+		background-color:rgba(245,245,220,1);
+		color:black;
+		transition:1s;
+		}
+
+		#menu{
+		display:none;
+		}
+
+		#menu:checked ~ .sidebar{ position: fixed; left: 0;transition:1.5s;}
+		#menu:checked ~ .everything{ position:relative;transition:2s;left: 15em;}
+		#wholepage{
+		width:1265px;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		</style>
+	</head>
+<!--<in front of the body tag background is set to a url link that refers to an image. This sets the whole page to show an image>-->
+	<body>
+
+	<div class="back">
+	<div id="mbar">
+	<!--just like with the other html files, I slightly altered the color of the Imtiaz Rahman logo to match the mood of the color scheme-->
+	<h1>Imtiaz Rahman</h1>
+	<ul>
+		<li><a href="index.html">Home</a>
+		<li><a href="RI_MyIntroductionP2.html">About Me</a>
+		<li><a href="RI_MyCities.html">Best Cities</a>
+		<li><a href="RI_Hobbies.html">My Hobbies</a>
+		<li><a href="RI_MyGoals.html">Future Goals</a>
+	</ul>
+	</div>
+	</div>
+	<!--this whole page div allows me to give set width to web page so at other screen sizes i can simply zoom in/out to accomodate the various screen sizes-->
+	<div id="wholepage">
+
+	<input type="checkbox" id="menu">
+	<label for="menu" class="icon">&#9776;</label>
+	<nav class="sidebar">
+		<ul>
+			<li><a href="#who">Who am I?</a></li>
+			<li><a href="#drm">Secrets!</a></li>
+			<li><a href="#cars">Cars and Technology?</a></li>
+		</ul>
+	</nav>
+
+
+	<div class="everything">
+	<!--<this h1 tag will represent the title of the webpage and will be the largest size out of all the header>-->
+
+	<h1 style="font-family: georgia;"><center>Love for Cars and Technology</center></h1>
+	<center><div id="s"><p>Want to know about the <a href="RI_MyCities.html#opp">oppurtunities</a> or <a href="RI_MyCities.html#land">landmarks</a> in New York?</p></div></center>
+
+	<!--the 'br' tag spaces out each sub-header sections of the homepage to give a nice layout-->
+	<!--these three images are going to be right below the title in the webpage and has been resized to look clean and even-->
+
+
+	<div id="microchip">
+	<img src="Images/colors.gif" alt = "Supposed to be a microchip picture."/>
+	</div>
+
+	<div id="tesla">
+	<img src="Images/tesla interior.jpg" alt = "Tesla car" usemap="#imgmap2017317213926"/>
+	<map id="imgmap2017317213926" name="imgmap2017317213926">
+	<area shape="rect" alt="Tesla logo" title="" coords="160,65,183,87" href="https://www.tesla.com/?redirect=no" target="_blank" />
+	<area shape="rect" alt="Driver dashboard" title="" coords="176,35,237,61" href="https://www.youtube.com/watch?v=moQybHOrmLk" target="_blank" />
+	<area shape="rect" alt="Tesla screen" title="" coords="259,33,328,161" href="https://www.tesla.com/support/walkthrough-touchscreen" target="_blank" />
+	</map>
+	</div>
+
+	<div id="bronxsci">
+	<a href="http://bxscience.edu/" target="_blank"><img src="Images/bronx science.jpg"  style="width:100%; height:100%;"alt = "Supposed to be a school picture."/></a>
+	</div>
+
+	<div id="quote">
+	<img src="Images/gandhi.jpg" alt = "Supposed to be a Gandhi picture."/>
+	</div>
+
+	<div id="quote2">
+	<img src="Images/quote.jpg" alt = "Supposed to be a famous quote picture."/>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="text">
+	<!--refers to the side column with the mini gif's-->
+	<div id="column">
+		<img src="Images/river.gif"/>
+		<img src="Images/city light.gif" style="margin-top:-4px;"/>
+		<img src="Images/ferrari.gif" style="margin-top:-4px;"/>
+		<img src="Images/nature.gif" style="margin-top:-4px;"/>
+
+	</div>
+
+
+	<figure>
+	<div id="family">
+	<img src="Images/my family.jpg" alt = "Supposed to be a family picture."/>
+	<figcaption>This picture gives me such good memories! We were in Bay Plaza
+	and we found a spotlight where we can actually see our faces.</figcaption>
+	</div>
+	</figure>
+	<!-- the idea behind the container divs is it allows me to divide up things into like boxes to i can move them around to make fluid geometric shapes.-->
+	<div class="container">
+	<h2 id="who"><i><mark>Who am I?</mark></i></h2>
+	<!--<here there is a repitition in structure for there will be a sub-header and then the paragraph relating to the header>-->
+	<div id="p1"><p>Hi! My name is Imtiaz Rahman and I preside within the
+	city that never sleeps, New York. Currently I am a sophmore at
+	the Bronx Highschool of Science. In my family I am the only child.
+	Sometimes being a only child may feel....<em><sub>boring</sub></em>....but most of the times
+	it's beneficial for me for I can devote learning time without having to worry
+	about a sibling. In addition, my parents are very loving and never let me
+	feel the absence of a sibling. I come from an immagrant background where my parents come
+	from Bangladesh. I am grateful to be here in America for the oppurtunity of a good education.
+	Aside from everything, one thing that I always think about is exactly why my family decided to move from Florida, my birth place, all the
+	way to New York. I understand that there's more oppurtunities in New York, but still what New York doesn't have are clear blue bodies of water
+    with such kind people. But of course, I feel lucky to have my origins from the humble country of Bangladesh. Though it's a small country,
+	there are some special things about the atmosphere which makes it unique. I always miss the warm climate and the FOOD found in Bangladesh.
+	Some can say I have home sickness.</p></div>
+	<br><br>
+	</div>
+
+
+	<div class="par2">
+	<p>Some may find my personality unique from the crowd. For starters, I don't make use of major social media platforms such as Facebook and
+	Snapchat. Don't mistake me for being anti-social, because I can socialize with others. It's just that I don't see any real needs for social
+	media as of now. Another thing people should know of me is that I truly distaste Apple. Don't get me wrong, Apple can make some precious
+	products. However, I feel like after the loss of Steve Jobs, the company has been lacking innovation. Now they're surviving due to their
+	brand name. In addition, the price point is too high compared to what they're really offering. Fun fact about me is that I can beat box. The
+	story behind how I learned to do it is really random. During middle school, I was used to pen tapping as a beat making method. For some reason
+	it became a habit. Whenever I sat on my desk, I automatically start pen tapping. At one point I didn't feel like pen tapping because it required
+	physicall work. So, I decided to use an alternative which was my mouth. This bad habit of mine turned out to be something usefull. </p>
+
+	<p>In addition to beat boxing, I know how to play the guitar. Just like beat boxing, this means of music was self-learned. I believe it was around
+	6<sup>th</sup> grade when I found a guitar I had which was built for kids. However, at that time I thought that was a typical guitar. Since I felt useless, and
+	have always wanted to play the guitar, I decided to learn to play it. I went to youtube and searched up how to play an instrumental to a simple song.
+	By doing this, I gradually became flexible with playing. One day my dad heard and actually bought me a really nice guitar from Guitar Center. Unlike
+	beatboxing, I haven't been able to utlilize the guitar to my benefit except pleasure. By looking at this webpage you might have been able to assume that
+	I am deeply in love with cars, which is true. Though I don't know the mechanics behind cars, I do appreciate the craftmanship behind cars. Cars like the
+	Ferrari La Ferrari are simply astonishing for their proportional beauty and speed. Not only the beauty, but the technology that goes behind these machines
+	also intrigue me for their versitality.
+	</p>
+	</div>
+
+
+	<div id="container2">
+	<h2 id="drm"><i><mark>Some Hidden Talents/Thoughts?</mark></i></h2>
+	<div id="p2"><p>Ever since I was little, I've always wanted to work with computers.
+	It always intrigued me how sophisticated programs like games, apps, or operating software were
+	made. In the little mind of mine, I would imagine long strings of binary code being inputted by a guy
+	with big glasses. However, during middle school I remember writing my first code in Java, "Hello World".
+	After that I realized that there can be endless possibilties in programming. From this point forward I've
+	always wanted to be a programmer. My ultimate dream though is to be like the major tech giants like Bill Gates
+	or Steve Jobs. They have revolutionaized the way devices are used. I would like to contribute to this
+	field of technology. Outside of academic, I have always dreamed of owning all the cars I've ever loved,
+	ranging from the Jaguar F-type to the range Rover to even BMW GT4. Though there is a least likely chance
+	of acheiving such a  goal, there is no harm in using it as the driving force to pursue higher education for better
+	job oppurtunities. </p></div>
+	</div>
+
+	<div id="walking">
+	<img src="Images/walking.gif" alt = "Supposed to be a famous quote picture."/>
+	</div>
+
+	<div id="part2">
+	<p>In addition to cars, I've always been into music every since I was little. In middle school the
+	first instrument I played was the clarinet. Over the summer I found a small guitar in my house and used youtube to learning
+	how to play it. Ever since then, I learned how to play the guitar. Now I dream of having a room filled with the variety of
+	guitars that have been built with special care. One thing I am not good at though is cooking. The best I can do is microwave
+	noodle, but other than that I don't know to make something taste like real food if that exists. I tried making a sandwhich
+	once but it changed to the color black and I knew that I'm not working with the sandwhich business ever. However, I do try here
+	and there and am starting to improve. Though, I aim to learn to cook good because I realize one can't go anywhere if they can't
+	cook.</p>
+	</div>
+
+	<div id="container3">
+	<h2 id="cars"><i><mark>Why cars and technology?</mark></i></h2>
+	<div id="p3"><p>You may be wondering, why do I like both cars and technology. Well, cars always fascinate me
+	in terms of design and power. It's such a product where if both design and power are great, then it seems to connect
+	to its driver. Cars like the Ferrari are so well recognized for how well the proportions of the car fit "perfectly"
+	I feel that when advanced technology is incorporated within cars, it enhances this connection with drivers. We see
+	this happening in the real world. For example, Tesla is trying to increase autonomy in the car through things like
+	autopilot. This will be useful because in times of danger this feature can save someone's life. Not only will it save
+	someone's life, but it will lead to a breakthrough in public transportation. We are already seeing companies like Uber trying to
+	incorporate self-driving to pick up customers without a driver. Not only that, but buses, planes, and trains can be imporved by using
+	some of the latest cutting-edge safety features, which will decrease the risk of an accident. One day we might see a world where there is
+	barely any human interaction in terms of traveling. People will simply scan a QR code or ticket and enter an autonmous vehicle to reach
+	his or her destination. However, some people find it a ittle creepy and risky because there is no human controller to make sure the robot or
+	AI doesn't mess up.</p></div>
+	</div>x
+
+	</div>
+	</div>
+	</div>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

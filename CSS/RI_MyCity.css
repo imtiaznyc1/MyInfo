@@ -1,0 +1,135 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+a:hover{
+padding:px;
+}
+body{
+	background-image:url('http://sf.co.ua/14/01/wallpaper-1050500.jpg');
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#mbar{
+	background-color: rgba(0,0,0,1);
+	width:100%;
+	height:70px;
+	line-height:70px;
+	position:fixed;
+	top:0;
+	z-index:1000;
+	padding-bottom:0px;
+	}
+#mbar ul{
+	float:right;
+	margin-right:20px;
+	}
+#mbar h1{
+	float:left;
+	color:white;
+	}
+#mbar ul li:nth-child(2) a{
+	background-color:rgba(255,255,255,.8);
+	color:black;
+	padding:10px;
+	}
+#mbar ul li{
+	list-style-type:none;
+	display:inline-block;
+	padding:12px;
+	}
+#mbar ul li a{
+	color:white;
+	}
+nav{
+		width:100%;
+		text-align:center;
+	}
+nav li a{
+		display:block;
+		padding:15px;
+		border-bottom:1px solid;
+		color:rgba(0,0,0,1);
+	}
+
+nav li a:hover{
+		display:block;
+		padding:15px;
+		border-bottom:1px solid;
+		color:rgba(255,255,255,1);
+}
+.sidebar{
+		margin-top:40px;
+		width:190px;
+		height:100%;
+		position:absolute;
+		background-color:rgba(255,255,255,1);
+		left:-244px;
+		z-index:99;
+		transition:2s;
+		position:fixed;
+		border-style:solid;
+		border-radius:25px;
+		margin-top:9px;
+		color:black;
+	}
+		
+.icon{
+		color:rgba(255,255,255,1);
+		padding:10px;
+		padding-left:50px;
+		left:-35px;
+		background-color:rgba(61,61,61,.8);
+		cursor:pointer;
+		position:fixed;
+		z-index:100;
+		border-radius: 25px;
+		margin-top:-30px;
+	}
+		
+.icon:hover{
+		background-color:rgba(245,245,220,1);
+		color:black;
+		transition:1s;
+		}
+		
+#wholepage{
+		width:1265px;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		
+#menu{
+		display:none;
+		}
+		
+#menu:checked ~ .sidebar{ position: fixed; left: 0;transition:1.5s;}
+#menu:checked ~ .everything{ position:relative;transition:2s;left: 15em;}
+		
+#big{
+		overflow:hidden; 
+		width:710px; 
+		height:410px;
+		margin-left:25%;
+		}
+		
+#small{
+		overflow:auto;
+		width:725px;
+		height:420px;
+		text-align:center;
+		
+		}
+#text{
+		opacity:0;
+		transition:1.5s;
+		visibility:;
+		}
+		
+#text:hover{
+		visibility:visible;
+		opacity:1;
+		transition:2.5s;
+		}

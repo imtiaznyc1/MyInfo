@@ -3,25 +3,32 @@
 <html>
 	<head>
 		<title>My Hobbies</title>
+		<link rel="stylesheet" href="CSS/RI_Hobbies.css">
 		<link rel="stylesheet" href="CSS/RI_MyFormatting.css">
 	</head>
 	<style>
-	*{
-	margin:0px;
-	padding:0px;
-	}
+
 	body{
-	background-image:url('https://i.makeagif.com/media/12-03-2015/x8QCDD.gif');
+	background-image:url('Images/hobbies background.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	padding-top:70px;
+	padding-top:80px;
 	}
-	table,th,td{
-	border: 1px solid black;
-	border-collapse: collapse;
+	table,td{
+	border-bottom:solid;
+	border-width:1px;
+	}
+	tr{
+	opacity:.7;
+	transition:1.5s;
+	}
+	tr:hover{
+	background-image:url('Images/table.jpeg');
+	opacity:1;
+	transition:1.5s;
 	}
 	th{
-	padding:12px;
+	padding:20px;
 	background-color: rgba(255,128,0,.5);
 	}
 	td{
@@ -40,74 +47,71 @@
     padding: 0;
 	background-color:rgba(255,255,255,0.3);
 	}
-	#mbar{
-		background-color: rgba(0,0,0,.8);
-		width:100%;
-		height:70px;
-		line-height:70px;
-		position:fixed;
-		top:0;
+
+
+img{
+		opacity:0.8;
+		filter:brightness(50%);
+		filter:blur(1px);
 		}
-	#mbar ul{
-		float:right;
-		margin-right:20px;
+img:hover{
+		opacity:1.0;
+		transition:2s;
+		background-color:none;
+		filter:brightness(100%);
+		filter:blur(0px);
 		}
-	#mbar h1{
-		float:left;
-		color:white;
-		}
-	#mbar ul li:last-child a{
-		background-color:rgba(255,255,255,.8);
-		color:black;
-		padding:10px;
-		}	
-	#mbar ul li{
-		list-style-type:none;
-		display:inline-block;
-		padding:12px;
-		text-decoration: none;
-		}
-	#mbar ul li a{
-		color:white;
-		}
-	
+
 	</style>
 
 <body>
+<input type="checkbox" id="menu">
+	<label for="menu" class="icon">&#9776;</label>
+	<nav class="sidebar">
+		<ul>
+			<li><a href="#e">Music</a></li>
+			<li><a href="#c">Cars</a></li>
+			<li><a href="#f">Basketball</a></li>
+		</ul>
+	</nav>
 <div id="mbar">
 <!--just like with the other html files, I slightly altered the color of the Imtiaz Rahman logo to match the mood of the color scheme-->
 	<h1 style="color:rgba(118,125,211,.8)">Imtiaz Rahman</h1>
 	<ul>
+		<li><a href="index.html">Home</a>
 		<li><a href="RI_MyIntroductionP2.html">About Me</a>
-		<li><a href="RI_MyIntroductionPL.html">Best Cities</a>
+		<li><a href="RI_MyCities.html">Best Cities</a>
 		<li><a href="RI_Hobbies.html">My Hobbies</a>
+		<li><a href="RI_MyGoals.html">Future Goals</a>
 	</ul>
 	</div>
-<center><table style="height:70%; width:70%; margin:auto;"></center>
+	<div class="everything">
+<center><table style="height:100%; width:98%; margin:auto; border:0px;"></center>
 <!-- this th has colspan 3 to make sure the header covers the length of the smaller headers combined.-->
-	<tr>
+	<thead>
 		<th colspan="3">Door Through My Mind</th>
-	</tr>
+	</thead>
+
 	<tr>
 		<th>Hobbies</th>
-		<th>Visuals</th> 
+		<th>Visuals</th>
 		<th>Achievements/Activities</th>
 	</tr>
-	<!-- each of the other rows have the smae format but different content. rowspan of 2 is used so that when the mid column is split in half for each box, the other boxes will adjust accordingly-->
+	<!-- each of the other rows have the same format but different content. rowspan of 2 is used so that when the mid column is split in half for each box, the other boxes will adjust accordingly-->
 	<tr>
-		<td rowspan="2"><b>Creating Music With the Help of Instruments</b></td>
-		<td><img width="100%" height="100%" src="Images/guitar.jpg"></td> 
-		<td rowspan="2">I was able to take this interest of music and was able to first apply in my middle school band. That was where I learned 
+		<td rowspan="2" id="e"><b>Creating Music With the Help of Instruments</b></td>
+		<td><img width="100%" height="100%" src="Images/guitar.jpg"></td>
+		<td rowspan="2">I was able to take this interest of music and was able to first apply in my middle school band. That was where I learned
 		the fundementals of music such as reading a music sheet as well as understaning tempo, rythm, etc. Not only was I able to perform in my
 		school functions, but we were given the honour to perform at Rockefeller. Here I was able to meet such talented young minds. Once I got into
 		highschool, I joined a club called acoustic sound. Here, I was able to practice playing my guitar and was able to collaborate with others
-		to make covers. These experiences have enhanced my knowledge on music one step after another. Following the guitar club led to me joining 
+		to make covers. These experiences have enhanced my knowledge on music one step after another. Following the guitar club led to me joining
 		a team called Nasheed. Here, my role was to beat box or make sounds with the help of my mouth. This sound will go in conjunction to the singers
 		in the team. This year we were able to place second place.</td>
 	</tr>
 	<tr>
 		<td><div class="scroll">I remember when it was in middle school where I was first introduced to the beautiful clarinet. That was when I learned various
-		fundementals to music such as reading a music sheet and the best part of all, the clarinet itself. Learning how to play such an instrument 
+		fundementals to music such as reading a music sheet and the best part of all, the clarinet itself. Learning how to play such an instrument
 		helped me not only clear my mind through stress, but also improve my cognitive skills. Research has found that the more instruments one can
 		play, the more the brain is able to improve memory and cognitive skills. However, after 8th grade I eventually lost interest in the clarinet.
 		However, I've always desired to play the guitar ever since I was little. Over the summer, I realized that I had this guitar that was meant
@@ -116,9 +120,9 @@
 		</div></td>
 	</tr>
 	<tr>
-		<td rowspan="2"><b>Visiting and following car shows</b></td>
-		<td><img width="100%" height="100%" src="Images/car show.jpg"/></td> 
-		<td rowspan="2">Though I haven't accomplished many things related to cars, I have participated in various activities which allows me to be 
+		<td rowspan="2" id="c"><b>Visiting and following car shows</b></td>
+		<td><img width="100%" height="100%" src="Images/car show.jpg"/></td>
+		<td rowspan="2">Though I haven't accomplished many things related to cars, I have participated in various activities which allows me to be
 		the car enthusiast I really am. In highschool, I've joined a club called desktop robotics, and there I was able to build this bot that utilized
 		the power of motors and wheels. Here I was able to try different designs to see which produced the highest speed and was overall a fun
 		learning experience. Even before that I used to collect small scaled models of my favorite cars such as the Ferrari. I would collect them
@@ -134,7 +138,7 @@
 		terms of renewable energy in transportation, becuase one of the largest consumption of fossil fuels revolves around transportation.</div></td>
 	</tr>
 	<tr>
-		<td rowspan="2"><b>Playing Basketball</b></td>
+		<td rowspan="2" id="f"><b>Playing Basketball</b></td>
 		<td><img width="100%" height="100%" src="Images/ball.jpg"></td>
 		<td rowspan="2">Every summer, my friends and I would always organize this mini competition where we hold games of four rounds. After each round
 		the loser is eliminated while the winner competes against another team. This continues on until the last two teams compete. Whoever wins that last
@@ -143,30 +147,30 @@
 		to control the ball correctly.</td>
 	</tr>
 	<tr>
-		<td><div class="scroll">It hasn't been long since I was first played basketball, around the summer of eighth grade. However, since then I have enjoyed playing 
+		<td><div class="scroll">It hasn't been long since I was first played basketball, around the summer of eighth grade. However, since then I have enjoyed playing
 		basketball and really made this my hobby for the summer time. Don't mistake me for being a top player at this game, because the only thing I'm
 		good at is making "airballs". However, I don't let that discourage me. Everytime I go out to play ball, I always try an alternative method to improve
 		my skills, and it's probably this that makes it a long lasting hobby. To some extent it applies to programming too, at first there will always be problems,
 		but the joy of solving it is really a pleasure for the heart.</div></td>
-	
-	
+
+
 	</tr>
 	</table>
-	
+	</div>
 </body>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</html>
